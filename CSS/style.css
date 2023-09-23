@@ -1,4 +1,11 @@
 /* common css start*/
+*{
+    --primary-color: #02918c;
+    --secondary-color: #ffffff;
+    --font-color: #7e8287;
+    --hover-color: #cfc91d;
+}
+
 h1,h2,h3,h4,h5,h6,
 p,small,
 ul,ol{
@@ -14,4 +21,68 @@ a,a:hover{
 body,textarea{
     font-family: 'Open Sans', sans-serif;
 }
-/* common css end*/
+/* common css start*/
+/* nav css end*/
+nav {
+    background-color: var(--primary-color);
+ }
+nav #navmenu ul li a{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 13.5px 24.5px;
+}
+nav #navmenu ul li a:hover{
+    color: var(--hover-color);
+}
+ /* nav css end*/
+
+ /* banner css start*/
+
+#banner{
+    /* height: 728px; */
+    height: 90vh;
+    background-size: cover !important;
+    background-position: center !important;
+    position: relative;
+    z-index: 1;
+    color: var(--white_color);
+
+}
+ #banner::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: -1;
+  }
+  #banner h4{
+    font-size: 30px;
+    font-weight: 400;
+  }
+  #banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    height: 80%;
+    margin: 25px 0 22px 0;
+  }
+  #banner p{
+    font-size: 18px;
+    font-weight: 400;
+  }
+  #banner  img{
+    margin: 52px 0;
+  }
+  #banner a{
+    font-size: 14px;
+    font-weight: 800;
+    margin: 0 264.59px;
+    padding: 18px 49px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+  }
+  #banner a:hover{
+    background-color: var(--hover-color);
+  }
+
+ /* banner css end*/
