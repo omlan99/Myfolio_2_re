@@ -1,71 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mr.x">
-    <meta name="developer" content="Mr.Y">
-    <meta name="designer" content="Mr.z">
-    <meta name="title" content="">
-    <meta name="keywords" content=""> 
-    <meta name="description" content="">
     <title>My folio</title>
-    <link rel="shortcut icon" href="favicon.ico" type="">
-    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
-    <!-- Boootstrap css link -->
-    <link rel="stylesheet" href="./Bootstrap/bootstrap.min.css">
-    <!-- main css link -->
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 <body>
-    <!--nav section start-->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container"> 
-            <a href="" class="navbar-brand"><img src="./Images/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toogle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="navbar-item">
-                        <a href="" class="nav-link">Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="" class="nav-link">About</a> 
-                    </li>
-                    <li class="navbar-item">
-                        <a href="" class="nav-link">Services</a> 
-                    </li>
-                    <li class="navbar-item">
-                        <a href="" class="nav-link">My work</a> 
-                    </li>
-                    <li class="navbar-item">
-                        <a href="" class="nav-link">Contact</a> 
-                    </li>
-                </ul>
+
+<!--nav section start-->
+<nav class="navbar navbar-expand-lg  ">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="./Images/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li>
+          <a class="nav-link active" aria-current="page" href="#">About</a>
+        </li>
+        <li>
+          <a class="nav-link active" aria-current="page" href="#">Service</a>
+        </li>
+        <li>
+          <a class="nav-link active" aria-current="page" href="#">My Work</a>
+        </li>
+        <li>
+          <a class="nav-link active" aria-current="page" href="#">Contact</a>
+        </li>
+      
+      </ul>
+ 
+    </div>
+  </div>
+</nav>
+<!--nav section end-->
+
+<!--banner section start-->
+<section id="banner" style="background-image: url(./Images/hero_img.jpg);">
+  <div class="container d-flex justify-content-center align-items-center text-center h-100">
+   
+      <div >
+        <h3> Lorem ipsum dolor sit iusmod tempor </h3>
+        <h1 class="text-uppercase">incididunt bore</h1>
+        <p> Orem ipsum dolor sit amet, consectetur </p>
+        <img src="./Images/banner-img.png" alt="" class="d-block mx-auto my-3">
+        <a href="#" class="nav-link text-uppercase" id="know">know more</a>
+      </div>
+    
+  </div>
+</section>
+<!--banner section end-->
+ 
+<!--about section start-->
+  <section id="about">
+    <div class="container">
+      <div class="section_info text-center">
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <h2>About Me</h2>
+            <p>~~~~~~~~ :: ~~~~~~~~</p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+            <b> quis nostrud exercitation ullamco </b>
+            laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 text-center about_item">
+          <img src="./Images/about-img-1.png" alt="icon">
+          <h3>Title goes here</h3>
+          <p>
+          onsectetur adipisicing elit, sedo eiusmod tempor incidi
+          et dolorerserss eerhfre mag.
+          </p>
+        </div>
+        <div class="col-lg-3 text-center about_item">
+          <img src="./Images/about-img-2.png" alt="icon">
+          <h3>Title goes here</h3>
+          <p>
+              onsectetur adipisicing elit, sedo eiusmod tempor incidi
+              et dolorerserss eerhfre mag.
+          </p>
+        </div>
+        <div class="col-lg-3 text-center about_item">
+          <img src="./Images/about-img-3.png" alt="icon">
+          <h3>Title goes here</h3>
+          <p>
+              onsectetur adipisicing elit, sedo eiusmod tempor incidi
+              et dolorerserss eerhfre mag.
+          </p>
+        </div>
+        <div class="col-lg-3 text-center about_item">
+          <img src="./Images/about-img-4.png" alt="icon">
+          <h3>Title goes here</h3>
+          <p>
+              onsectetur adipisicing elit, sedo eiusmod tempor incidi
+              et dolorerserss eerhfre mag.
+          </p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+<!--about section end-->
+<!--service section start-->
+  <section id="service" style="background-image: url(./Images/service\ img.png);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="section_info">
+            <h2>Service</h2>
+            <p>~~~~~ :: ~~~~~</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 service_item">
+              <img src="./Images/service_img_1.png" alt="icon">
+              <h3>Title goes here</h3>
+              <p>
+                  Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                  et dolorerserss eerhfre mag.
+              </p>
             </div>
-        </div>       
-    </nav>
-    <!--nav section end-->
-    <!-- banner section start-->
-      <section id=" banner" style="background-image:url(./Images/hero_img.jpg)">
-            <div class="container"  class="justify-content-center align-items-center">
-                <div>
-                    <h4> Lorem ipsum dolor sit iusmod tempor </h4>
-                    <h1>incididunt bore</h1>
-                    <p> Orem ipsum dolor sit amet, consectetur </p>
-                    <img src="./Images/banner-img.png" alt="" class="d-block mx-auto my-3">
-                    <a href="#" class="nav-link text-uppercase" id="know">know more</a>
-            
-                </div>
+            <div class="col-lg-6 service_item">
+              <img src="./Images/service_img_2.png" alt="icon">
+              <h3>Title goes here</h3>
+              <p>
+                  Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                  et dolorerserss eerhfre mag.
+              </p>
+            </div>
+            <div class="col-lg-6 service_item">
+              <img src="./Images/service_img_3.png" alt="icon">
+              <h3>Title goes here</h3>
+              <p>
+                  Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                  et dolorerserss eerhfre mag.
+              </p>
+            </div>
+            <div class="col-lg-6 service_item">
+              <img src="./Images/service_img_4.png" alt="icon">
+              <h3>Title goes here</h3>
+              <p>
+                  Onsectetur adipisicing elit, sedo eiusmod tempor incidi
+                  et dolorerserss eerhfre mag.
+              </p>
+            </div>
+        </div>        
+
+        </div>
+      </div>
+    </div>
+  </section>
+<!--service section end-->
+
+<!--my_work section start-->
+  <section id="my_work">
+    <div class="container">
+      <div class="row justify-content-center section_info text-center">
+        <div class="col-lg-8">
+          <h2>My work</h2>
+          <p>~~~~~ :: ~~~~~</p>
+          <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+              ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row g-0">
+      <div class="col-lg-3 work_img position-relative">
+        <img src="./Images/my_work_1.jpg" alt="" class="d-block w-100 h-100 ">
+        <div class="overlay text-center">
+          <h3>Title goes here</h3>
+          <p>
+            onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 work_img position-relative">
+        <img src="./Images/my_work_2.jpg" alt="" class="d-block w-100 h-100 ">
+        <div class="overlay text-center">
+          <h3>Title goes here</h3>
+          <p>
+            onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 work_img position-relative">
+        <img src="./Images/my_work_3.jpg" alt="" class="d-block w-100 h-100 ">
+        <div class="overlay text-center ">
+          <h3>Title goes here</h3>
+          <p>
+            onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 work_img position-relative">
+        <img src="./Images/my_work_4.jpg" alt="" class="d-block w-100 h-100 ">
+        <div class="overlay text-center">
+          <h3>Title goes here</h3>
+          <p>
+            onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 work_img position-relative">
+        <img src="./Images/my_work_5.jpg" alt="" class="d-block w-100 h-100 ">
+        <div class="overlay text-center">
+          <h3>Title goes here</h3>
+          <p>
+            onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 work_img position-relative">
+        <img src="./Images/my_work_6.jpg" alt="" class="d-block w-100 h-100 ">
+        <div class="overlay text-center ">
+          <h3>Title goes here</h3>
+          <p>
+            onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 work_img position-relative">
+        <img src="./Images/my_work_7.jpg" alt="" class="d-block w-100 h-100 ">
+        <div class="overlay text-center">
+          <h3>Title goes here</h3>
+          <p>
+            onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-3 work_img position-relative">
+        <img src="./Images/my_work_8.jpg" alt="" class="d-block w-100 h-100 ">
+        <div class="overlay text-center">
+          <h3>Title goes here</h3>
+          <p>
+            onsectetur adipisicing elit, sedo eiusmod tempor incidi
+            et dolorerserss eerhfre mag.
+          </p> 
+        </div>
+      </div>
+    </div>
+  </section>
+<!--my_work section end-->
+    <!--contact section start-->
+      <section id="contact">
+        <div class="row justify-content-center align-items-center text-center section_info">
+         
+            <div class="col-lg-8 text-center">
+              <h2>CONTACT ME</h2>
+              <p>~~~~~ :: ~~~~~</p>
+              <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt 
+                  ut labore et dolore magna aliqua.
+              </p>
+             </div>
+          
+        </div>
+      </section>
+    <!--contact section end-->
+    <!--form section start-->
+      <section id="form">
+        <div class="container">
+          <form action="" class="row justify-content-center">
+            <div class="col-lg-7">
+              <input type="text" placeholder="Name" class="w-100">
+            </div>
+            <div class="col-lg-7">
+              <input type="email" placeholder="Email Address" class="w-100">
+            </div>
+            <div class="col-lg-10">
+              <input type="text" placeholder="Subject" class="w-100">
+            </div>
+            <div class="col-lg-10"> 
+              <textarea type="text" placeholder="Message" class="w-100"></textarea>
+            </div>
+          </form>
+          <button  type="Submit">Submit</button>
     		</div>
       </section>
-    <!-- banner section end-->
-
-    <script src="bootstrap.bundle.min.js"></script>
+    <!--form section end-->
+  <script src="./Js/bootstrap.bundle.min.js"></script>
+  <script src="./Js/script.js"></script>
 </body>
 </html>

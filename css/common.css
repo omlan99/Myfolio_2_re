@@ -1,0 +1,42 @@
+:root{
+    --primary-color: #02918c;
+    --secondary-color: #ffffff;
+    --font-color: #7e8287;
+    --hover-color: #cfc91d;
+    --dark-color:#0b1016;
+}
+
+h1,h2,h3,h4,h5,h6,p,small{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a, a:hover{
+    text-decoration: none;
+}
+body,textarea{
+      font-family: 'Open Sans', sans-serif;
+      
+
+}
+
+/* section_info css start*/
+.section_info{
+    margin-bottom: 80px;
+   
+}
+.section_info h2{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color:var(--primary-color);
+}
+.section_info p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 41px;
+    color:var(--font-color);
+}
+/* section_info css end*/

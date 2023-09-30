@@ -1,88 +1,185 @@
-/* common css start*/
-*{
-    --primary-color: #02918c;
-    --secondary-color: #ffffff;
-    --font-color: #7e8287;
-    --hover-color: #cfc91d;
-}
-
-h1,h2,h3,h4,h5,h6,
-p,small,
-ul,ol{
-    padding: 0;
-    margin: 0;
-}
-ul,ol{
-    list-style: none;
-}
-a,a:hover{
-    text-decoration: none  ;
-}
-body,textarea{
-    font-family: 'Open Sans', sans-serif;
-}
-/* common css start*/
-/* nav css end*/
-nav {
+/* nav css start*/
+nav{
     background-color: var(--primary-color);
- }
-nav #navmenu ul li a{
-    color: #fff;
-    font-size: 12px;
-    font-weight: 800;
-    padding: 13.5px 24.5px;
+
 }
-nav #navmenu ul li a:hover{
+#navbarContent ul li a{
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 12px;
+    padding: 13.5px 24.5px;
+    transition: 0.4s;
+}
+#navbarContent ul li a:hover{
     color: var(--hover-color);
 }
- /* nav css end*/
 
- /* banner css start*/
+/* nav css end*/
 
+/* banner css start*/
 #banner{
-    /* height: 728px; */
-    height: 90vh;
+    height: 728px;
     background-size: cover !important;
     background-position: center !important;
+    color: var(--secondary-color);
     position: relative;
     z-index: 1;
-    color: var(--white_color);
-
 }
- #banner::after{
+#banner::after{
     content: "";
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.65);
     z-index: -1;
   }
-  #banner h4{
-    font-size: 30px;
-    font-weight: 400;
-  }
-  #banner h1{
+#banner h3{
+    font-size: 30px; 
+    font-weight: 400;   
+}
+#banner h1{
     font-size: 68px;
     font-weight: 800;
-    height: 80%;
-    margin: 25px 0 22px 0;
-  }
-  #banner p{
+    letter-spacing: 30px;
+}
+#banner p{
     font-size: 18px;
-    font-weight: 400;
-  }
-  #banner  img{
-    margin: 52px 0;
-  }
-  #banner a{
+    line-height:33px
+}
+#banner img{
+    display:block;
+    margin:52px auto;
+}
+#banner a{
+    display:inline-block;
+    background-color:var(--primary-color);
+    padding: 17px 42px;
+    color:var(--dark-color);
     font-size: 14px;
     font-weight: 800;
-    margin: 0 264.59px;
-    padding: 18px 49px;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-  }
-  #banner a:hover{
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+#banner a:hover{
     background-color: var(--hover-color);
+    border-radius: 15px;
+
+}
+/* banner css end*/
+/* about css start*/
+  #about{
+    margin:98px 0;
+    color: var(--font-color);
+  }
+  #about .section_info p b{
+    font-size:23px;  
+    color: var(--font-color);
+  }
+  #about .about_item{
+    padding:36px 65px;
+    border-right:1px solid #d9dbdb;
+  }
+  #about .about_item:last-child{
+    border-right-color: transparent;
+
+}
+  #about .about_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 23px;
+    padding:29px 0;
+  }
+  #about .about_item p{
+    font-size: 11px;
+    line-height: 23px;
+    padding:29px 0;
   }
 
- /* banner css end*/
+/* about css end*/  
+/* service css start*/
+#service{
+    background-image: url(../Images/service_img.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 74px 0 89px;
+    color: var(--font-color);
+}
+#service .section_info{
+    padding-bottom: 57px;
+}
+  #service .service_item{
+    padding: 0 63.5px 57px 0;
+  }
+  #service .service_item h3{
+    font-size: 16px;
+    font-weight: 800;
+    padding: 17px 0 19px 0;
+
+  }
+  #service .service_item p{
+    font-size: 11px;
+    font-weight: 400;
+  }
+/* service css end*/    
+/* my work css start*/
+/* #my_work .work_img{
+  position: relative;
+} */
+ #my_work .work_img .overlay{
+  position: absolute;
+  padding: 58px 39px;
+  inset: 20px 28px;
+  background-color: rgba(3, 145, 140, 0.85);
+  transform: scale(0);
+  transition: 0.5s;
+ }
+ #my_work .work_img:hover .overlay{
+  transform: scale(1);
+ }
+ #my_work .work_img .overlay h3{
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--secondary-color);
+ }
+ #my_work .work_img .overlay p{
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--secondary-color)
+ }
+/* my work css end*/
+/* contac css start*/
+  #contact{
+    padding: 100px 0;
+  }
+
+/* contac css end*/
+/* form css start*/
+#form{
+  background-color: var(--dark-color);
+  padding: 70px;
+}
+#form input,textarea{
+  margin-bottom: 55px;
+  background: none;
+  border: none;
+  text-align: center;
+  border-bottom: 1px solid #898989;
+  resize: none;
+
+}
+#form button{
+  background-color: #cfc91d;
+  padding:17px 65px;
+  display: block;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#form button:hover{
+  color:#fff;
+  background-color: #02918c;
+}
+/* form css end*/
